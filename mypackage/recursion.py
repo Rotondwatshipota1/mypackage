@@ -1,10 +1,5 @@
 def sum_array(array):
-    '''''
-    this funtion ruturns  the sum of the elments in an sum_array
-
-    args : array it accepts an array as an argument
-    returns : n the sum of elements in an sum_array
-    ''''
+    
     for i in array:
         return sum_array(array)
 
@@ -15,7 +10,7 @@ def fibonacci(n):
     returns the number in the nth index of the fibonacci sequence
     ''''
     if n <= 1:
-        return 1
+        return n
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
