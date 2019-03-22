@@ -1,7 +1,10 @@
 def sum_array(array):
-    
-    for i in array:
-        return sum(array)
+   if len(array)== 1:
+       return array[0]
+   else:
+       return array[0]+ sum_array(array[1:])
+
+   '''Return sum of all items in array'''
 
 def fibonacci(n):
   
