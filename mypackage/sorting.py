@@ -1,19 +1,12 @@
 def bubble_sort(items):
+    """ Implementation of bubble sort """
+    out = items.copy() # in place protection on items
+    for i in range(len(out)):
+        for j in range(len(out)-1-i):
+            if out[j] > out[j+1]:
+                out[j], out[j+1] = out[j+1], out[j]     # Swap!
 
-    length = len(items) - 1
-    sorted = False
-    while not sorted:
-
-        sorted = True
-        for element in range(0,length):
-
-             if items[element] > items[element + 1]:
-                hold = items[element + 1]
-                 items[element + 1] = items[element]
-                 items[element] = hold
-                 sorted = False
-              return items\n"
-
+    return out
 
  def merge_sort(items):
 
