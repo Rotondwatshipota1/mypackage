@@ -1,7 +1,7 @@
 def sum_array(array):
     
     for i in array:
-        return sum_array(array)
+        return sum(array)
 
 def fibonacci(n):
   
